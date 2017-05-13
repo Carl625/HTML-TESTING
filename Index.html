@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <!--Meta Tags-->
+	<meta charset="utf-8">
+
+        <!--Title-->
+        <title>HTML TEST PREVIEW</title>
+
+	<!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	  </head>
+    <body>
+	    <script type="text/javascript">
+
+		    var usrin = prompt("1 or 2?");
+
+		    var star_intro = '<p style="font-weight:500;font-size:30px;font-family:Times New Roman;">Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The opening crawl is the signature device featured in every numbered film of the series. It opens with the static blue text, "A long time ago in a galaxy far, far away....", followed by the Star Wars logo and the crawl text, which describes the backstory and context of the film. The visuals are accompanied by the "Main Title Theme", composed and conducted by John Williams.The sequence has been featured in every live-action Star Wars film produced by Lucasfilm with the exception of Rogue One. Although it retains the basic elements, it has significantly evolved throughout the series. It is one of the most immediately recognizable elements of the franchise and has been frequently parodied.</p>'
+
+		    if ( usrin === "1") {
+			    document.write('<div style="margin-left:50px;margin-right:50px;">')
+			    for (i=0; i < star_intro.length; i++) {
+				document.write(star_intro + "<br>")
+			    }
+			    document.write('</div>');
+		    } else if ( usrin === "2") {
+
+			    document.write("<center>")
+
+			    for (i=1; i < star_intro.length; i++) {
+				    document.write('<img src="/InANutshellWorldIcon.jpg">');
+
+
+				    if ((i%3)===0 && (i != 0)) {
+					    document.write("<br>")
+				    }
+			    }
+			    document.write("</center>")
+		    }
+
+	    </script>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
